@@ -1,0 +1,11 @@
+Corelab-Challenge Backend
+
+Comecei criando o backend e a estrutura de pastas no modelo de arquitetura MVC, acabei optando por utilizar o Express como framework e o MongoDB aliado da lib mongoose para o BD. Criei uma pasta chamada routes para os endpoints da API e na pasta controllers crei a lógica para quando o endpoint fosse chamado, utilizei de funções do mongoose para fazer as querys do CRUD, além disso criei no model um VehicleModel no formato mongoDB schema para manipular os objetos no banco.
+
+Corelab-Challenge Frontend
+
+Já no frontend mantive a estrutura de pastas padrão, mas acabei utilizado o react-router-dom para criar páginas especificas à serem acessadas, adicionei alguns componentes como as Forms e criei uma lógica onde chamava os carros com o getVehciles e filtrava pelo front, sofri um pouco para mandar como props todas as informações do veiculo, porém no final acabou funcionando. Nos inputs coloquei quase todos como type=String, apenas o das cores eu utilizei o type=Color para que o usuário pudesse escolher dentre as cores visualmente ao invés de escrever(isso facilitou na hora de colocar a cor no card também! (e foi o único jeito que consegui pensar de fazer isso sem ter que validar cor por cor rs.)). Na página FilterVehicles eu chamei a api novamente pra usar os objetos já criados no banco dentro das options do input para que apareça sugestões de carros já cadastrados quando o usuário começar a escrever nos campos de texto. Na página EditVehicles quando chamava a função navitage() na página Vehciles(que é a home) passava por paramêtros o id do veículo clicado no card, aliás sofri um pouco pra achar meios de passar essas informações de uma página pra outra utilizando o react-router-dom kkkkk, talvez na próxima eu deva renderizar tudo na própria home, mas estou aprendendo. 
+
+Conclusão
+
+Pra finalizar gostaria de dizer que gostei muito do desafio e que ele me fez aprender muito como programador, sei que tenho muitas coisas para conhecer e evoluir, espero que seja contratado como trainee e que eu consiga entregar muitas coisas cada dia mais.
