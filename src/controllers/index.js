@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const Vehicle = mongoose.model("Vehicle")
+require('../models/VehicleModel');
+const Vehicle = mongoose.model("Vehicle");
 
 const createVehicles = (request, response) => {
     //adicionar veiculo
